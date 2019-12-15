@@ -1,0 +1,30 @@
+CLA
+
+Wire with longest delay.
+XOR -> AND -> AND -> AND -> AND -> AND -> OR
+3,3,3,3,3,3,2 = 20 ns
+
+Area
+AND, XOR
+4,6
+AND AND
+4,4
+AND AND OR AND AND AND AND
+18 + 4,4,4,4,4,4,4
+OR AND OR AND OR AND AND AND
+46 + 4*8
+OR OR OR AND AND OR
+78 + 4*6
+OR AND
+8+ 102
+OR XOR
+4,6 +110 = 120 Size
+RCA
+PATH
+XOR -> AND -> XOR -> XOR -> AND -> XOR
+3,3,3,3,3,3 = 18 ns
+AREA
+XOR AND AND XOR OR * 4
+(6,4,4,6,4)*4 = 96 Size
+
+How funny, RCA may take up less room but it can't handle calculations all at once.
